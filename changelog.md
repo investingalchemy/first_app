@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.3.0] 2025-02-09
+### Added day 4 exercises and required assignments into my_first_script.py
+- Added exercises for loops, conditional satements, and error handling in the my_first_script.py file.
+
 ## [0.2.0] 2025-02-06
 ### Added Day_3_Ex_1.py
 - Added python file of all the Day 3 Required assignments
