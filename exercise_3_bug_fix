@@ -1,6 +1,0 @@
-# The program has an error, find it and fix it
-#milk value was a string not a float, need to convert to float to add with bread, then convert total to string to add to total cost statement.
-milk = "3"
-bread = 2.5
-total = float(milk) + bread
-print("The total cost is: $" + str(total))
