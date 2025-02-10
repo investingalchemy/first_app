@@ -1,5 +1,23 @@
 #print("Hello World!")
 
+##Asking for Favorite grocery store
+#Favorite_Grocery_Store = input("What is your favorite grocery store?")
+#
+##Greeting them to store
+#print(f"Welcome to {Favorite_Grocery_Store}")
+
+##price of grocery items
+#milk = 12.50
+#bread = 3.69
+#eggs = 5.99
+#
+##calculating total cost
+#total_cost = milk + bread + eggs
+#
+##Print total cost
+#print("The total is: $" + str(total_cost))
+
+
 #Day 3: List and Tuples practice
 
 #Indexing
@@ -90,6 +108,129 @@
 #groceries = fruits + vegetables
 #print(groceries)
 
+##practicing dictionaries
+#dict_a = {"name":"milk", "cost": 6.5, "store": "Save-On", "amount": 2}
+#print(dict_a.items())
+#
+##practice excercise
+##create and accessing values
+#book = {'title': '1984', 'author': 'George Orwell', 'year': 1949}
+#print(book["author"])
+#
+##Adding and updating entries:
+#profile = {}
+#profile['name'] = 'Alice'
+#profile['age'] = 30
+#profile['city'] = 'Paris'
+#print(profile)
+#profile['city'] = 'London'
+#print(profile)
+#
+##removing and retrieving keys and values
+#student = {'name': 'Emma', 'grade': 'A', 'subject': 'Math'}
+#student.pop('subject')
+#print(student)
+
+## The program has an error, find it and fix it
+##milk value was a string not a float, need to convert to float to add with bread, then convert total to string to add to total cost statement.
+#milk = "3"
+#bread = 2.5
+#total = float(milk) + bread
+#print("The total cost is: $" + str(total))
+
+##PRACTICING SETS
+#
+##adding and removing elements in sets
+#fruits = {'apple', 'banana', 'cherry'}
+#fruits.add('orange')
+#fruits.remove('banana')
+#print(fruits)
+#
+##Union and Intersections
+#set_a = {1, 2, 3, 4}
+#set_b = {3, 4, 5, 6}
+#print(set_a.union(set_b))
+#
+#print(set_a.intersection(set_b))
+#
+#
+##Difference Operation
+#set_x = {'cat', 'dog', 'fish'}
+#set_y = {'dog', "bird"}
+#print(set_x.difference(set_y))
+
+##DAY 3
+##Threee Tuples to represent grocery items
+#apple_tuple = ('apple', 0.50, 5)
+#orange_tuple = ('orange', 0.75, 8)
+#pineapple_tuple = ('pineapple', 1.30, 10)
+#
+##Grocery list
+#grocery_list = []
+#grocery_list.append(apple_tuple)
+#grocery_list.append(orange_tuple)
+#grocery_list.append(pineapple_tuple)
+#print(grocery_list[0])
+#
+##Total cost of apples
+#total_cost = apple_tuple[1] * apple_tuple[2]
+#print(f"Total cost of apples: ${total_cost}")
+#
+##total cost of oranges
+#total_cost = orange_tuple[1] * orange_tuple[2]
+#print(f"Total cost of oranges: ${total_cost}")
+#
+##total cost of pineapples
+#total_cost = pineapple_tuple[1] * pineapple_tuple[2]
+#print(f"Total cost of Pineapples: ${total_cost}")
+#
+#
+##Dictionaries
+#apple_dict = {'name':'Apple', 'price': 0.50, 'quantity': 5}
+#orange_dict = {'name':'Orange', 'price': 0.75, 'quantity': 8}
+#pineapple_dict = {'name':'Pineapple', 'price': 1.37, 'quantity': 13}
+#
+##adding total cost to dictionaries
+#apple_dict['Total Cost'] = round(apple_dict['price'] * apple_dict['quantity'], 2)
+#print(apple_dict)
+#
+#orange_dict['Total Cost'] = orange_dict['price'] * orange_dict['quantity']
+#print(orange_dict)
+#
+#pineapple_dict['Total Cost'] = round(pineapple_dict['price'] * pineapple_dict['quantity'], 2)
+#print(pineapple_dict)
+#
+#print(f"Total cost of apples: ${apple_dict['Total Cost']}")
+#print(f"Total cost of oranges: ${orange_dict['Total Cost']}")
+#print(f"Total cost of pineapples: ${pineapple_dict['Total Cost']}")
+#
+#
+##EXCERCISE 3 Slicing and Sorting a List
+#num_list = [16, 47, 1, 3, 5, 9, 15, 2]
+##slice and print everything from the second index onward
+#print(num_list[2:])
+##slice and print everything up to, but not including, the fourth index
+#print(num_list[:4])
+##use a negative index to get and print the third to last item in the list
+#print(num_list[-3])
+#
+##sort and print the number list in descending order
+#num_list.sort(reverse=True)
+#print(num_list)
+##prints lengh of number list
+#print(len(num_list))
+#
+##EXCERCISE 4 SETS OPERATIONS
+#dairy_products = {'milk', 'butter', 'cream', 'yogurt', 'cheese'}
+#desserts = {'jello', 'chocolate', 'candy', 'cookies', 'muffins'}
+#dairy_products.add('ice cream')
+#desserts.add('ice cream')
+#dairy_products.remove('yogurt')
+#desserts.remove('jello')
+#
+#print(dairy_products)
+#print(desserts)
+#print(dairy_products.intersection(desserts))
 
 #DAY 4 LESSON EXERCISES
 #Conditional Statements
@@ -200,6 +341,7 @@
 #double_b = b * 2
 #total = a + double_b
 #print("The total is:", total)
+
 
 #DAY 4 REQUIRED ASSIGNMENTS
 
@@ -406,3 +548,82 @@
 #        break
 #
 #print(shopping_list)
+
+#DAY 5 EXERCISES AND REQUIRED ASSIGNMENTS
+#Defining & calling functions
+#Exercise 1:Displaying a message
+#def welcome_message():
+#    print("Welcome!")
+#welcome_message()
+#
+##Exercise 2: Print favorite food
+#def favorite_food():
+#    print("Steak and cheese are my favorite foods")
+#favorite_food()
+##Exercise 3: Show sum of numbers
+#def show_sum():
+#    results = 5 + 10
+#    print (results)
+#show_sum()
+
+#Paramaters and return values
+#Exercise 1: Grocery Item Search, prints whether an item is available
+#
+#def find_item(item_name, is_available):
+#    if is_available == True:
+#        print(f"{item_name} is available")
+#    else:
+#        print(f"{item_name} is not available")
+#
+#find_item("Water", True)
+##Exercise 2: Favorite Snack, shows how much snacks are left
+#def favorite_snack(snack_name, quantity_left):
+#    if quantity_left > 0:
+#        print(f"You have some {snack_name} left to enjoy")
+#    else:
+#        print(f"You're out of {snack_name}")
+#
+#favorite_snack("Chips", 3)
+#favorite_snack("Cookies", 0)
+#
+##Exercise 3: Store Item Location; where to find items in a store
+#
+#def item_location (item_name, store_selection):
+#    print (f"Find {item_name} in the {store_selection}")
+#
+#item_location("Juice", "Beverage Aisle")
+#
+#Scope and Lifetime of Variables
+#Exercise 1: Local and Global Variables, showing difference between local and global variable placement
+#food = "Ribs"
+#
+#def favorite_food():
+#    food = "Steak"
+#    print("Local food: ", food)
+#
+#favorite_food()
+#print("Global food:", food)
+#
+##Exercise 2: Variable Lifetime in functions by observing results
+#
+#def counter():
+#    count = 0
+#    count += 1
+#    print("Count: ", count)
+#
+#counter()
+#counter()
+#
+#Exercise 3: Combining scope and lifetime to see the effects on variable values
+#user_name = "Joe"
+#
+#def change_name():
+#    user_name = "James"
+#    print("Inside function:", user_name)
+#
+#change_name()
+#print("Outside function:", user_name)
+
+from datetime import date
+print(date.today())
+
